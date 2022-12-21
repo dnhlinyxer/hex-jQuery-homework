@@ -112,7 +112,6 @@ table {
     font-size: 20px;
     text-decoration: none;
     padding: 15px 0;
-    /* border: 1px solid #000; */
 }
 .menu li a::before {
     content: "";
@@ -136,22 +135,17 @@ table {
     background-color: rgb(255, 255, 255, 0.9);
 }
 
-/* swiper & banner */
-.swiper {
-    height: 300px;
+/* banner */
+.banner {
     position: relative;
 }
-.swiper-slide img {
-    object-fit: cover;
-}
 .banner-text {
-    height: 300px;
     position: absolute;
-    z-index: 10;
+    z-index: 9;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
+    top: 70px;
+    bottom: 70px;
     display: flex;
     align-items: center;
 }
@@ -164,6 +158,13 @@ table {
     line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.swiper {
+    height: 300px;
+}
+.swiper-slide img {
+    object-fit: cover;
+}
+
 
 /* course */
 .course-list {
@@ -231,7 +232,7 @@ table {
 .compare-table td {
     padding: 10px;
 }
-td:nth-child(1) {
+.compare-table td:nth-child(1) {
     font-weight: bold;
 }
 .highlight {
@@ -241,7 +242,6 @@ td:nth-child(1) {
 
 /* contact us form */
 .contact-form {
-    width: 100%;
     background-image: linear-gradient(#00644b, #009771);
     padding: 30px 15px;
 }
@@ -294,7 +294,6 @@ td:nth-child(1) {
 
 /* footer */
 .footer {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

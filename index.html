@@ -62,27 +62,30 @@
             </nav>
         </header>
         <main>
-            <div class="swiper banner">
-                <!-- swiper -->
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/banner-1.png" alt="banner-1">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/banner-2.png" alt="banner-2">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/banner-3.png" alt="banner-3">
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <!-- banner -->
+            <div class="banner">
+                <!-- banner-text -->
                 <div class="banner-text">
                     <h2>
                         六角學院<br>讓您奠定良好的前端基礎
                     </h2>
                 </div>
+                <!-- swiper -->
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/banner-1.png" alt="banner-1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/banner-2.png" alt="banner-2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/banner-3.png" alt="banner-3">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
+            
             <div class="course">
                 <ul class="course-list">
                     <li class="course-item">
@@ -174,7 +177,7 @@
                         <input id="name" type="text" name="name" required placeholder="請輸入您的姓名">
                         <label for="phone">電話</label>
                         <input id="phone" type="tel" name="phone" required placeholder="請輸入您的電話">
-                        <label for="mail">電子郵件</label>
+                        <label for="email">電子郵件</label>
                         <input id="email" type="email" name="email" required placeholder="請輸入您的電子郵件">
                         <input class="btn" type="submit" value="送出" >
                     </div>
