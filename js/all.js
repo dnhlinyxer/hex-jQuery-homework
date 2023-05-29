@@ -1,5 +1,16 @@
 $(document).ready(function () {
     // totop
+    function showTotop() {
+        // console.log($(this).scrollTop());
+        // 向下滾動300px才顯示
+        if ( $(this).scrollTop() > 300 ) {
+            $('.totop').fadeIn();
+        } else {
+            $('.totop').fadeOut();
+        }
+    }
+    $(window).scroll(showTotop);
+    
     $('.totop a').click(function (e) { 
         e.preventDefault();
         $('html, body').animate({
@@ -36,7 +47,7 @@ $(document).ready(function () {
         pagination: {
             el: '.swiper-pagination',
             type: "bullets",
-            clickable: true, // not working?
+            clickable: true,
         },
     });
 });
